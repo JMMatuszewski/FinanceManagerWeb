@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finances Manager</title>
+    <link rel="stylesheet" href="MainStyle.css">
+    <link rel="stylesheet" href="LoginStyle.css">
+</head>
+
+<body>
+    <nav>
+        <button>Author</button>
+        <div>
+            Finances Manager
+        </div>
+        <button>Guide</button>
+    </nav>
+
+    <main>
+
+        <div></div>
+        <section class="loginpanel">
+            <!-- <a href="MainMenu.html"><button id="back" type="button"> Go back</button></a> -->
+            <div id="title">Add Expense</div>
+            <div><label for="name">Name:</label></div>
+            <div><input id="name" type="text" placeholder="name"></div>
+            <div><label for="group">Group:</label></div>
+            <div><input id="group" list="groups"></div>
+            <datalist id="groups">
+                <option value="Food">
+                <option value="Bills"></option>
+                <option value="Transport"></option>
+                <option value="Utilities"></option>
+                <option value="Other"></option>
+            </datalist>
+            <div id="submit"><button type="submit">Add</button></div>
+            <div id="back"><a href="MainMenu.html"><button>Go back</button></a></div>
+        </section>
+        <div></div>
+    </main>
+
+</body>
+
+</html>

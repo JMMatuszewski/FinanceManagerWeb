@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finances Manager</title>
+    <link rel="stylesheet" href="MainStyle.css">
+    <link rel="stylesheet" href="LoginStyle.css">
+</head>
+
+<body>
+    <nav>
+        <button>Author</button>
+        <div>
+            Finances Manager
+        </div>
+        <button>Guide</button>
+    </nav>
+
+    <main>
+
+        <div></div>
+        <section class="loginpanel">
+            <!-- <a href="MainMenu.html"><button id="back" type="button"> Go back</button></a> -->
+            <div id="title">Show Bilans</div>
+            <div><label for="start">Starting date:</label></div>
+            <div><input id="start" type="date" max="12-06-2022"></div>
+            <div><label for="end">Starting date:</label></div>
+            <div><input id="end" type="date" max="12-06-2022"></div>
+            <script>
+                var date = new Date();
+                var currentDate = date.toISOString().slice(0, 10);
+                var currentTime = date.getHours() + ':' + date.getMinutes();
+                document.getElementById('end').value = currentDate;
+            </script>
+            <!-- <div><label for="pass">Enter password:</label></div> -->
+            <!-- <div><input id="pass" type="password" placeholder="password"></div> -->
+            <div id="submit"><button type="submit">Show</button></div>
+            <div id="back"><a href="MainMenu.html"><button>Go back</button></a></div>
+        </section>
+        <div></div>
+    </main>
+
+</body>
+
+</html>
