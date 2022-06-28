@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="notranslate" translate="no">
+<!-- NOT WORKING -->
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate" /> <!-- NOT WORKING -->
+    <html translate="no">
+
+    </html>
     <title>Finances Manager</title>
     <link rel="stylesheet" href="MainStyle.css">
     <link rel="stylesheet" href="LoginStyle.css">
@@ -24,11 +29,19 @@
         <div></div>
         <section class="loginpanel">
             <!-- <a href="MainMenu.html"><button id="back" type="button"> Go back</button></a> -->
-            <div id="title">Show Bilans</div>
-            <div><label for="start">Starting date:</label></div>
-            <div><input id="start" type="date" max="12-06-2022"></div>
-            <div><label for="end">Starting date:</label></div>
-            <div><input id="end" type="date" max="12-06-2022"></div>
+            <div id="title">Show Saldo</div>
+            <div><label for="saldoType">Choose Saldo Type:</label></div>
+            <div><input id="saldoType" list="groups"></div>
+            <datalist id="groups">
+                <option value="month"></option>
+                <option value="precise"></option>
+            </datalist>
+            <div class="month"><label for="month">Choose month:</label></div>
+            <div class="month"><input id="month" type="month"></div>
+            <div class="precise"><label for="start">Starting date:</label></div>
+            <div class="precise"><input id="start" type="date"></div>
+            <div class="precise"><label for="end">Starting date:</label></div>
+            <div class="precise"><input id="end" type="date"></div>
             <script>
                 var date = new Date();
                 var currentDate = date.toISOString().slice(0, 10);
@@ -37,8 +50,8 @@
             </script>
             <!-- <div><label for="pass">Enter password:</label></div> -->
             <!-- <div><input id="pass" type="password" placeholder="password"></div> -->
-            <div id="submit"><button type="submit">Show</button></div>
-            <div id="back"><a href="FinancesMenu.html"><button>Go back</button></a></div>
+            <div id="submitSaldo"><a class="button" href="FinancesMenu.html">Show</a></div>
+            <div id="back"><a class="button" href="FinancesMenu.html">Go back</a></div>
         </section>
         <div></div>
     </main>

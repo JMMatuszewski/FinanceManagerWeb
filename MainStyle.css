@@ -18,6 +18,10 @@ body {
 }
 
 /* --------------------------------------------- */
+/*
+.button {
+    display: inline-block;
+}*/
 
 nav {
     /* border: 5px groove #fb0000; */
@@ -103,17 +107,23 @@ main div:nth-of-type(2) {
     /* border: 5px ridge #00e759; */
 }
 
-main section button {
+.button {
     height: 50px;
     width: 200px;
     border-radius: 8px;
     font-size: 20px;
+    text-align: center;
+    text-decoration: none;
     color: #122939;
+    padding: 10px;
     background-color: #da6805;
+    border: 2px solid #000000;
     cursor: pointer;
+    display: inline-block;
 }
 
-main section button:hover {
+/* main section button */
+.button:hover {
     box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
     transform: scale(1.05) rotate(-1deg);
 }

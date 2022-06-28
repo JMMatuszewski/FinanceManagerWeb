@@ -19,7 +19,8 @@
     /* border: 5px ridge #a01414; */
 }
 
-.loginpanel div:nth-child(2n) {
+/*.loginpanel div:nth-child(2n) { */
+.loginpanel label {
     margin-top: 20px;
     font-weight: bold;
     text-shadow: 2px 2px #122939;
