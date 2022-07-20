@@ -7,6 +7,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     /* border: 5px groove #fb8500; */
     background-color: #122939;
@@ -17,91 +18,17 @@ body {
     /* background: linear-gradient(90deg, gray 50%, darkgray 0); */
 }
 
-/* --------------------------------------------- */
-/*
-.button {
-    display: inline-block;
-}*/
-
 nav {
-    /* border: 5px groove #fb0000; */
-    width: 100%;
-    height: 100px;
     backdrop-filter: blur(5px);
     border-bottom: 10px ridge #3fc0a2;
-
-    display: flex;
-    justify-content: center;
-
 }
 
-nav button {
-    /* border: 5px groove #fb8500; */
-    height: 90px;
-    width: 150px;
-    background-color: #3fc0a2;
-    border: none;
-    font-size: 20px;
-    color: #122939;
+.textMain {
+    color: rgb(218, 104, 5);
+    font-weight: bold;
 }
 
-nav div {
-    /* margin-left: 330px; */
-    height: 90px;
-    line-height: 90px;
-    /* font-size: 50px; */
-    font-size: 4vw;
-    color: #da6805;
-    flex-grow: 1;
-    text-align: center;
-    display: inline-block;
-}
-
-/* -------------------- MAIN ---------------- */
-
-main {
-    width: 100%;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    /* border: 5px ridge #a01414; */
-}
-
-section {
-    margin-top: 80px;
-    width: 400px;
-    height: 400px;
-    /* box-sizing: content-box; */
-
-    /* box-sizing: border-box; */
-    /* border: 5px ridge #a05514; */
-
-    /* display: flex; */
-    /* align-items: center; */
-    /* flex-direction: column; */
-}
-
-main div:nth-of-type(1) {
-    flex-grow: 1.5;
-
-}
-
-main div:nth-of-type(2) {
-    flex-grow: 1;
-}
-
-.mainpanel div {
-    height: 50px;
-    margin: 10px;
-    padding: 0px;
-    font-size: 40px;
-    /* color: #da6805; */
-    color: rgba(202, 47, 0, 0.932);
-    text-align: center;
-    /* border: 5px ridge #a01414; */
-}
-
-#title {
+.title {
     margin: 10px;
     font-weight: bold;
     /* border: 5px ridge #00e759; */
@@ -122,20 +49,11 @@ main div:nth-of-type(2) {
     display: inline-block;
 }
 
-/* main section button */
 .button:hover {
     box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
     transform: scale(1.05) rotate(-1deg);
 }
 
-main section label {
-    font-size: 10px;
+input {
+    min-width: 200px;
 }
-
-/* --------------------- PANEL --------------------- */
-
-/* section div {
-    height: 10px;
-    width: 100px;
-    border: 5px ridge #a05514;
-} */
